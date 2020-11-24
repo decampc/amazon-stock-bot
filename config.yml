@@ -1,0 +1,112 @@
+
+
+#                       General Settings
+
+# Maximum price you want the bot to trigger at.
+price-threshold : 600.00
+# File containing Amazon product links; urls.txt is default
+urls-file: urlsnew.txt
+
+# enter timezone for accurate timekeeping
+timezone: US/Central
+
+# enable or disable sms notifications
+sms-notification: true
+
+# enable or disable email notifications
+email-notification: true
+
+# enable or disable twitter status update notifications
+twitter-tweet: true
+
+# enable or disable twitter dm notifictions
+twitter-dm: true
+
+
+
+#              SendGrid email notification API integration
+
+# set to false to set the API key in plain-text in this file rather than SendGrid's recommended config
+hide-api: true
+
+# only set this if the above option is set to false
+sg-api-key:
+
+# list of emails you would like to send email notifications to
+email-to:
+  - email@email.com
+
+email-from: email@email.com
+
+
+#               Twilio SMS notification API integration
+
+# Specify country code for both the to and from numbers here.
+# Note: non-us numbers will work with Twilio however, they generally
+# have a higher cost than the US ones.
+
+country-code: +1
+
+# Used to specify the phone numbers a notification should be sent to.
+Number to notify:
+  - 5555555555
+
+# Change this to the phone number linked to your Twilio plan.
+Number to send notification:
+  - 5555555555
+
+#Twilio API Information found in account settings.
+API Account SID:
+API Account Token:
+
+
+
+#                 Twitter notification API integration
+
+# list the accounts you would like to recieve a dm when stock is found
+dm-list:
+  - twitter
+
+# API keys from developer account
+twitter-oauth-handler:
+  consumer-token:
+  consumer-secret:
+  auth-token:
+  auth-secret:
+
+#                        Spoofing configuration
+
+# enable or disable the use of proxies
+# note: proxies are extremely recommended and you can find them for fairly
+# inexpensively or free. Amazon will block your access to pages if they see many requests
+# from the same IP address rendering the bot completely useless, and potentially
+# limiting your connection to the site too.
+
+use-proxies: true
+
+# proxy mode: set to text-mode for a .txt file or set to list to put them in the list below
+proxy-mode: file
+
+# name of file for your proxy text file; leave blank if the above is not set to text-mode
+proxy-file:
+
+# list proxies here if not using text file
+# I recommend either using ip authorization based proxies or unsecured ones,
+# trying to get them to work in user:pass form is a real pain.
+proxies-list:
+
+# same idea as above; extremely recommended
+rotate-user-agent: true
+
+# user agent mode: set to text-mode for a .txt file or set to list to put them in the list below
+user-agent-mode: text-file
+
+# name of file for your user agent text file; leave blank if the above is not set to text-mode
+user-agent-file: useragents.txt
+
+# list user agents here if not using text file
+# https://www.whatismybrowser.com for more, be careful to select computer versions so the mobile site does not get delivered.
+user-agents:
+
+
+# by decampc <3
