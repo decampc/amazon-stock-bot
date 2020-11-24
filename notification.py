@@ -40,7 +40,7 @@ def emailMessage(messageInput):
             SGApiKey = inputFile["sg-api-key"]
         emailFrom = inputFile["email-from"]
 
-    if multiple == True:
+    if multiple:
         message = Mail(
         from_email=emailFrom,
         to_emails=emailToList,

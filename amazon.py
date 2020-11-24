@@ -207,7 +207,7 @@ def run():
     urllist.close()
 
 # continually runs program until terminated
-while contRunning == True:
+while contRunning:
     try:
         run()
     # catch keyboard interrupt and close program more gracefully
